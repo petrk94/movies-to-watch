@@ -1,5 +1,8 @@
 <?php
-
+$db_host = ''; // Server Name
+$db_user = ''; // Username
+$db_pass = ''; // Password
+$db_name = ''; // Database Name
 
 $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 if (!$conn) {
@@ -63,17 +66,17 @@ if (!$query) {
 
 <!-- Side navigation -->
 <div class="sidenav">
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="#" onclick="ShowMovieList()">Movie List</a>
+  <a href="#" onclick="ShowMovie()">Add Movie</a>
+  <a href="suprise.php">Suprise me!</a>
+  <a href="https://github.com/petrk94/movies-to-watch">About</a>
 </div>
 
 <!-- Page content -->
 <div class="main">
 
 
-<div id="demo">
+<div id="MovieList">
   <h1>My "Movies to watch" List</h1>
   <h2>Here are all Movies listet I plan to watch</h2>
   
@@ -161,8 +164,69 @@ if (!$query) {
 	<p>Pen by Sergey Kupletsky</p>
   </div>
 </div>
+
+
+<div id="AddMovie">
+
+
+
+
+	<form action="insert.php" method="post">
+		<p>
+			<label for="MovieName">Movie Name:</label>
+			<input type="text" name="MovieName" id="MovieName">
+		</p>
+		<p>
+			<label for="MovieLink">Link to Movie:</label>
+			<input type="text" name="MovieLink" id="MovieLink">
+		</p>	
+		<input type="submit" value="Submit">
+	</form>
+
+
+	</div>
+
 </div>
 
+
+
+
+
+
+
+
+
+<script>
+function ShowMovieList() {
+    var x = document.getElementById("MovieList");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function ShowSuprise() {
+    var y = document.getElementById("suprise");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+}
+
+function ShowMovie() {
+    var z = document.getElementById("AddMovie");
+    if (z.style.display === "none") {
+        z.style.display = "block";
+	
+    } else {
+        z.style.display = "none";
+    }
+}
+
+
+</script>
 <script>
 /**
  * Created by Kupletsky Sergey on 05.11.14.
