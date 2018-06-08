@@ -166,9 +166,9 @@ if (!$query) {
 </div>
 
 
-<div id="AddMovie">
+<div id="AddMovie" style="display:none;">
 
-
+	<h2>Add new Movie</h2>
 
 
 	<form action="insert.php" method="post">
