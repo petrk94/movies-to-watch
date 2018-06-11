@@ -30,3 +30,16 @@ Screenshot of MySQL Table structure
 
   - Table name movie	
   - rows set as on screenshot
+
+  
+# Used Sources:
+
+[W3schools fixed Sidebar](https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp)
+
+[Random Row in MySQL](http://www.rndblog.com/how-to-select-random-rows-in-mysql/)
+
+[Auto Timestamp in PHPmyAdmin](https://stackoverflow.com/questions/3615471/auto-timestamp-new-entry-to-db-phpmyadmin)
+
+[HTML anchor tag with Javascript onclick event](https://stackoverflow.com/questions/7347786/html-anchor-tag-with-javascript-onclick-event)
+
+[How to hide one div and show another div using button onclick?](https://stackoverflow.com/questions/25981198/how-to-hide-one-div-and-show-another-div-using-button-onclick)
